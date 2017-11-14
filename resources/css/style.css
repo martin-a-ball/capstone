@@ -1,0 +1,216 @@
+/* universal styles */
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.site-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.left_wide {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.right_narrow {
+  width: 40%;
+}
+
+.shaded {
+  background-color: lightgrey;
+}
+
+h1 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+p,a {
+  padding: 0.5rem 0;
+}
+
+
+
+/* header styles */
+
+header.site-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 2rem;
+  padding-left: 1.5rem;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+button {
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+nav.mobile {
+  display: none;
+}
+
+/* navigation options replaced by icons */
+
+@media only screen and (max-width: 660px) {
+
+.logo {
+  display:none;
+}
+
+nav.desktop {
+  display:none;
+}
+
+nav.mobile {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+}
+/* main feature styles */
+
+.learn .site-container {
+  display: flex;
+}
+
+.learn img {
+  max-width: 100%;
+  height:auto;
+}
+
+.learn .right_narrow {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.learn button {
+}
+
+/* main feature switches to flex direction column for mobile */
+
+@media only screen and (max-width: 660px) {
+
+.learn .site-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.left_wide {
+  width: 100%;
+  padding: 0 0;
+}
+
+.right_narrow {
+  width: 100%;
+}
+
+.learn .right_narrow {
+  padding-top: 0;
+}
+
+h1 {
+  padding-top: 1.6rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.0rem;
+}
+
+}
+/* feature styles */
+
+.features .site-container {
+  display: flex;
+}
+
+.feature_big img {
+  width: 100%;
+  height: auto;
+}
+
+.feature_small {
+  display: flex;
+  padding: 1rem 1rem;
+}
+
+.feature_image {
+  width: 35%;
+}
+
+/* feature styles for mobile */
+
+@media only screen and (max-width: 660px) {
+
+.feature_big {
+  display:none;
+}
+
+}
+
+/* courses styles */
+
+/* thesis styles */
+
+/* footer styles */
+
+footer {
+  border-top: solid 1px grey;
+}
+
+footer.site-container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.copyright {
+  float:left;
+  padding-left: 1.5rem;
+}
+
+.legal {
+  float: right;
+}
+
+.legal span {
+  padding-right: 1rem;
+}
+
+/* hide legal terms in mobile view */
+@media only screen and (max-width: 520px) {
+
+.legal {
+  display: none
+}
+
+}
