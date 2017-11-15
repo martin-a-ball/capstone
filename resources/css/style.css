@@ -88,6 +88,14 @@ nav.mobile {
 
 /* navigation options replaced by icons */
 
+@media only screen and (max-width: 880px) {
+
+.logo h2 {
+  display:none;
+}
+
+}
+
 @media only screen and (max-width: 660px) {
 
 .logo {
@@ -140,9 +148,6 @@ nav.mobile {
 
 .right_narrow {
   width: 100%;
-}
-
-.learn .right_narrow {
   padding-top: 0;
 }
 
@@ -275,7 +280,71 @@ h4 {
 
 /* list of courses shrinks to a list of titles in mobile view */
 
+
+@media only screen and (max-width: 660px) {
+
+.course_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.course_detail {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  background-color: grey;
+}
+
+.course_detail img {
+  display:none
+}
+
+.course_detail h3 {
+  display:none
+}
+
+.course_detail h4 {
+  display:none
+}
+
+}
+
 /* thesis styles */
+
+.thesis .site-container {
+  display: flex;
+}
+
+.thesis h1 {
+  text-align: center;
+}
+
+.thesis video {
+  width: 100%;
+}
+
+@media only screen and (max-width: 660px) {
+
+.thesis .left_wide {
+  width: 100%;
+}
+
+.thesis h2 {
+  display: none;
+}
+
+.thesis p {
+  display: none;
+}
+
+.thesis .feature_text {
+  display: none;
+}
+
+}
 
 /* footer styles */
 
