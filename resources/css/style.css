@@ -35,6 +35,18 @@ h2 {
   font-size: 1.5rem;
 }
 
+h3 {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+h4 {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
 p,a {
   padding: 0.5rem 0;
 }
@@ -146,6 +158,21 @@ h2 {
   font-size: 1.0rem;
 }
 
+h3 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+}
+
+h4 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.learn .site-container {
+  padding-bottom: 2rem;
+}
 }
 /* feature styles */
 
@@ -156,10 +183,12 @@ h2 {
 .feature_big img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .feature_small {
   display: flex;
+  align-items: center;
   padding: 1rem 1rem;
 }
 
@@ -167,7 +196,23 @@ h2 {
   width: 35%;
 }
 
-/* feature styles for mobile */
+.feature_image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feature_image .mobile {
+  display: none;
+}
+.feature_text {
+  width: 65%;
+  padding: 1rem 1rem;
+}
+
+/* feature styles for mobile                            */
+/* main feaure image is hiden                           */
+/* feature small images swapped for wider mobile images */
 
 @media only screen and (max-width: 660px) {
 
@@ -175,9 +220,60 @@ h2 {
   display:none;
 }
 
+.feature_small {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_image .desktop {
+  display: none;
+}
+
+.feature_image .mobile {
+  display: block;
+}
+
+.feature_image {
+  width: 100%;
+}
+
+.feature_text {
+  width: 100%;
+}
+
 }
 
 /* courses styles */
+/* list of courses allowed to flex as width reduces */
+
+.learning_title {
+  text-align: center;
+}
+
+.course_list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 4rem;
+}
+
+.course_detail {
+  width: 30%;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+
+.course_detail img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course_detail h2,h3,h4 {
+  padding-left: 1rem;
+}
+
+/* list of courses shrinks to a list of titles in mobile view */
 
 /* thesis styles */
 
