@@ -1,7 +1,7 @@
 /* universal styles */
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 
@@ -26,19 +26,22 @@ body {
 h1 {
   padding-top: 2rem;
   padding-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
 h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 1.5rem;
+  font-weight: 700;
+
 }
 
 h3 {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h4 {
@@ -51,6 +54,10 @@ p,a {
   padding: 0.5rem 0;
 }
 
+a {
+  font-style: italic;
+  font-weight: bold;
+}
 
 
 /* header styles */
@@ -73,7 +80,7 @@ header.site-container{
 }
 
 .logo span {
-  font-weight: bold;
+  font-weight:300;
 }
 
 button {
@@ -82,6 +89,7 @@ button {
   font-size: 1rem;
   background-color: #335F4B;
   color: white;
+  transition: background-color,box-shadow 200ms ease-in-out 100ms;
 }
 
 button:hover {
